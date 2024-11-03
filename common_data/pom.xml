@@ -8,5 +8,27 @@
     <artifactId>common_data</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <properties>
+        <java.version>23</java.version>
+        <lombok.version>1.18.34</lombok.version>
+        <gson.version>2.11.0</gson.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+
+    </dependencies>
+
+
 </project>
