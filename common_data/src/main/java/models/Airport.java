@@ -15,7 +15,7 @@ public class Airport {
     private int x;
     private int y;
 
-    private void addPlane(String planeName) {
+    public void addPlane(String planeName) {
         int index = planes.indexOf(planeName);
 
         if (index >= 0) {
@@ -25,7 +25,7 @@ public class Airport {
         }
     }
 
-    private void removePlane(String planeName) {
+    public void removePlane(String planeName) {
         planes.remove(planeName);
     }
 
