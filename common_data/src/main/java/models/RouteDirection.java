@@ -13,6 +13,12 @@ public class RouteDirection {
     private RoutePoint to;
     private double progress;
 
+    public RouteDirection(RoutePoint from, RoutePoint to, double progress) {
+        this.from = from;
+        this.to = to;
+        this.progress = progress;
+    }
+
     public void addProgress(Double speed) {
         progress += speed;
 
