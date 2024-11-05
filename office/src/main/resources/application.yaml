@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    template:
+      default-topic: office-routes
+    consumer:
+      group-id: OfficeGroupId
+      auto-offset-reset: latest
+
+application:
+  airports:
+    - name: "Airport 1"
+      x: 25
+      y: 15
+    - name: "Airport 2"
+      x: 50
+      y: 85
+    - name: "Airport 3"
+      x: 75
+      y: 15
