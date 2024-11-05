@@ -2,7 +2,7 @@ package org.romanzhula.office.configurations;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import lombok.RequiredArgsConstructor;
-import org.romanzhula.office.handlers.OfficeSocketHandler;
+import org.romanzhula.office.handlers.OfficeWebSocketHandler;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.socket.WebSocketSession;
@@ -23,7 +23,7 @@ public class OfficeWebSocketConfig implements WebSocketConfigurer {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry
-                .addHandler(new OfficeSocketHandler(kafkaTemplate, messageConverter, sessionCache))
+                .addHandler(new OfficeWebSocketHandler(kafkaTemplate, messageConverter, sessionCache))
                 .setAllowedOrigins("*")
         ;
     }
