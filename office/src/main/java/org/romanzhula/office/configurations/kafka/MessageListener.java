@@ -28,7 +28,7 @@ public class MessageListener {
     @Autowired
     private Map<String, MessageProcessor<? extends Message>> processorsMap = new HashMap<>();
 
-    @KafkaListener(id = "OfficeGroupId", topics = "office_routes")
+    @KafkaListener(id = "OfficeGroupId", topics = "office-routes")
     public void kafkaListen(String message) {
         sendKafkaMessageToSocket(message);
         String dataFromJson = messageConverter.extractDataFromJson(message);
