@@ -18,11 +18,16 @@ public class Plane {
     private double yCoordinate;
     private double angleOfBoard;
 
-    private Boolean noFlying() {
+
+    public boolean hasRoute() {
+        return route != null;
+    }
+
+    public boolean noFlying() {
         return !flying;
     }
 
-    private void getPlanePosition(RouteDirection routeDirection) {
+    public void getPlanePosition(RouteDirection routeDirection) {
         //formula Bezier Curve B(t) = (1 - t)P0 + tP1  t є [0,1]
         double t = routeDirection.getProgress() / 100; // from 0 to 1
 
