@@ -3,13 +3,11 @@ package utils.helpers;
 import com.google.gson.Gson;
 import models.Message;
 
-import java.util.Objects;
-
 public class MessageConverter {
 
     private final Gson gson = new Gson();
 
-    public String extractDataFromGson(String data) {
+    public String extractDataFromJson(String data) {
         return gson.fromJson(data, Message.class).getMessageInfo();
     }
 
@@ -17,7 +15,7 @@ public class MessageConverter {
         return gson.fromJson(data, clazz);
     }
 
-    public String toJsonFromMessage(Objects data) {
+    public String toJsonFromMessage(Object data) {
         return gson.toJson(data);
     }
 
