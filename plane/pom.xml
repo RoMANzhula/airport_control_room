@@ -54,6 +54,13 @@
             <artifactId>spring-kafka-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--    add common_data modul    -->
+        <dependency>
+            <groupId>org.romanzhula</groupId>
+            <artifactId>common_data</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
