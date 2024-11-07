@@ -29,12 +29,18 @@ public class MessageListener {
     private Map<String, MessageProcessor<? extends Message>> processorsMap = new HashMap<>();
 
     @KafkaListener(id = "OfficeGroupId", topics = "office-routes")
-    public void kafkaListen(String message) {
+    public void kafkaListener(String message) {
         sendKafkaMessageToSocket(message);
         String dataFromJson = messageConverter.extractDataFromJson(message);
 
         try {
-            processorsMap.get(dataFromJson).processMessageFromJson(message);
+            MessageProcessor<? extends Message> processor = processorsMap.get(dataFromJson);
+
+            if (processor != null) {
+                processor.processMessageFromJson(message);
+            } else {
+                log.error("No processor found for key: {}", dataFromJson);
+            }
         } catch (Exception e) {
             log.error("We have no input data: {}", e.getLocalizedMessage());
         }
