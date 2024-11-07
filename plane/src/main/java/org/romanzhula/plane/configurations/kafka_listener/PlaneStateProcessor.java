@@ -6,7 +6,7 @@ import possible_messages.PlaneStateMessage;
 import utils.processors.MessageProcessor;
 
 @Slf4j
-@Component("PLANE_STATE")
+@Component("PLANE : STATE")
 public class PlaneStateProcessor implements MessageProcessor<PlaneStateMessage> {
 
     @Override

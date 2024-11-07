@@ -12,7 +12,7 @@ import utils.processors.MessageProcessor;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component("OFFICE_STATE") //(...) - key for Map processorsMap in MessageListener class
+@Component("OFFICE : STATE") //(...) - key for Map processorsMap in MessageListener class
 public class OfficeStateProcessor implements MessageProcessor<OfficeStateMessage> {
 
     private final MessageConverter messageConverter;

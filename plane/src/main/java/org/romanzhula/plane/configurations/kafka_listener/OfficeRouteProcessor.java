@@ -11,7 +11,7 @@ import utils.processors.MessageProcessor;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component("OFFICE_ROUTE")
+@Component("OFFICE : ROUTE")
 public class OfficeRouteProcessor implements MessageProcessor<OfficeRouteMessage> {
 
     private final MessageConverter messageConverter;

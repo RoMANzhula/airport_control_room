@@ -12,7 +12,7 @@ import utils.processors.MessageProcessor;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component("OFFICE_STATE")
+@Component("OFFICE : STATE")
 public class OfficeStateProcessor implements MessageProcessor<OfficeStateMessage> {
 
     private final KafkaTemplate<String, String> kafkaTemplate;

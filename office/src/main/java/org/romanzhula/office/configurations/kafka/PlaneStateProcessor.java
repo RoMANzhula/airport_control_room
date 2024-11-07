@@ -20,7 +20,7 @@ import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component("PLANE_STATE") //key for Map processorsMap in MessageListener class
+@Component("PLANE : STATE") //key for Map processorsMap in MessageListener class
 public class PlaneStateProcessor implements MessageProcessor<PlaneStateMessage> {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
