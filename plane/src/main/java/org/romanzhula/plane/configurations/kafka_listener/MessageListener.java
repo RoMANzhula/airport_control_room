@@ -23,13 +23,17 @@ public class MessageListener {
     private Map<String, MessageProcessor<? extends Message>> processorsMap = new HashMap<>();
 
     @KafkaListener(id = "PlaneGroupId", topics = "office-routes")
-    public void kafkaListen(String message) {
+    public void locatorListener(String message) {
         String dataFromJson = messageConverter.extractDataFromJson(message);
 
-        try {
-            processorsMap.get(dataFromJson).processMessageFromJson(message);
-        } catch (Exception e) {
-            log.error("We have no input data: {}", e.getLocalizedMessage());
+        if (processorsMap != null) {
+            try {
+                processorsMap.get(dataFromJson).processMessageFromJson(message);
+            } catch (Exception e) {
+                log.error("Error processing message: {}", e.getLocalizedMessage());
+            }
+        } else {
+            log.error("No processor found for data: {}", dataFromJson);
         }
     }
 
