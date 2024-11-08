@@ -4,19 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4589ae59-4900-4f7b-9b08-53f682548592" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/airport control room.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_data/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+    <list default="true" id="4589ae59-4900-4f7b-9b08-53f682548592" name="Changes" comment="Add index.vue - ui module - all logics with planes and messages">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/assets/airport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/assets/field.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/components/Airport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/components/Plane.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -26,34 +47,102 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.OfficeApplication.executor": "Run",
+    "Spring Boot.PlaneApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "openjdk-23",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/airport control room/ui/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true",
+    "vuejs.nuxt.types-notification-shown": "true"
   }
-}</component>
-  <component name="RunManager" selected="Spring Boot.OfficeApplication">
-    <configuration name="OfficeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\airport control room\ui\assets" />
+      <recent name="C:\Users\Admin\IdeaProjects\airport control room\ui\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\airport control room\ui\assets" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PlaneApplication">
+    <configuration name="OfficeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="office" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.romanzhula.office.OfficeApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.romanzhula.office.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="PlaneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="plane" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.romanzhula.plane.PlaneApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.romanzhula.plane.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.OfficeApplication" />
+      <item itemvalue="Spring Boot.PlaneApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OfficeApplication" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="Spring Boot.PlaneApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -71,11 +160,449 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730668568446</updated>
-      <workItem from="1730668569565" duration="2256000" />
+      <workItem from="1730668569565" duration="3469000" />
+      <workItem from="1730727240613" duration="25615000" />
+      <workItem from="1730803890507" duration="20758000" />
+      <workItem from="1730882490171" duration="22765000" />
+      <workItem from="1730985697582" duration="31219000" />
+      <workItem from="1731060482757" duration="12659000" />
+      <workItem from="1731076896070" duration="30527000" />
     </task>
+    <task id="LOCAL-00012" summary="Add AirportStateMessage - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730740735437</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740735437</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add PlaneStateMessage - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730740770907</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740770907</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add OfficeRouteMessage - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730740804155</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740804155</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add OfficeStateMessage - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730740819626</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740819626</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add MessageProcessor interface - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730740878020</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740878020</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add MessageConverter interface - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730740891616</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730740891616</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Up Airport - common_data modul - change to public methods">
+      <option name="closed" value="true" />
+      <created>1730744595426</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1730744595426</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Up Plane - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730832707830</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730832707830</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Up RouteDirection - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730832738568</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1730832738568</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Up RoutePoint - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730832756717</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1730832756717</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add application.yaml - office modul">
+      <option name="closed" value="true" />
+      <created>1730832911190</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730832911190</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Up pom.xml - office modul">
+      <option name="closed" value="true" />
+      <created>1730833026205</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1730833026205</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Up MessageConverter - common_data modul">
+      <option name="closed" value="true" />
+      <created>1730833134843</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1730833134843</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add RouteController - office modul">
+      <option name="closed" value="true" />
+      <created>1730836159359</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836159359</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add DirectionService - office modul">
+      <option name="closed" value="true" />
+      <created>1730836201442</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836201442</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add AirportProvider - office modul">
+      <option name="closed" value="true" />
+      <created>1730836322114</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836322114</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add BufferForWaitingRoutesService - office modul">
+      <option name="closed" value="true" />
+      <created>1730836368531</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836368531</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add PlaneProvider - office modul">
+      <option name="closed" value="true" />
+      <created>1730836760065</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836760065</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add AppConfig - office modul">
+      <option name="closed" value="true" />
+      <created>1730837107064</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730837107064</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add OfficeWebSocketConfig - office modul">
+      <option name="closed" value="true" />
+      <created>1730837314972</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730837314972</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add OfficeWebSocketConfig - office modul">
+      <option name="closed" value="true" />
+      <created>1730837373211</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730837373211</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add OfficeWebSocketHandler - office modul">
+      <option name="closed" value="true" />
+      <created>1730837426686</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730837426686</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add RouteDistributeScheduler - office modul">
+      <option name="closed" value="true" />
+      <created>1730838410815</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730838410815</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add MessageListener (Kafka config) - office modul">
+      <option name="closed" value="true" />
+      <created>1730838503793</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1730838503793</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add OfficeStateProcessor (Kafka config) - office modul">
+      <option name="closed" value="true" />
+      <created>1730838688307</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730838688307</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add PlaneStateProcessor (Kafka config) - office modul">
+      <option name="closed" value="true" />
+      <created>1730838773226</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1730838773226</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Up MessageListener (Kafka config) - office modul">
+      <option name="closed" value="true" />
+      <created>1730840880311</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1730840880311</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add application.yaml - plane modul">
+      <option name="closed" value="true" />
+      <created>1730882569452</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1730882569452</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Up pom.xml - add common_data modul - plane modul">
+      <option name="closed" value="true" />
+      <created>1730882630833</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1730882630833</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Up OfficeWebSocketConfig - office modul">
+      <option name="closed" value="true" />
+      <created>1730912586013</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1730912586013</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Add PlaneProvider - plane modul">
+      <option name="closed" value="true" />
+      <created>1730913876143</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1730913876143</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add MessageConfig - plane modul - inject message converter">
+      <option name="closed" value="true" />
+      <created>1730914123721</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1730914123721</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add MessageListener - plane modul">
+      <option name="closed" value="true" />
+      <created>1730914219728</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1730914219728</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add OfficeRouteProcessor - plane modul">
+      <option name="closed" value="true" />
+      <created>1730915079320</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1730915079320</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Add OfficeStateProcessor - plane modul">
+      <option name="closed" value="true" />
+      <created>1730915172827</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1730915172827</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Add PlaneStateProcessor - plane modul">
+      <option name="closed" value="true" />
+      <created>1730915305658</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1730915305658</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add PlaneScheduler - plane modul">
+      <option name="closed" value="true" />
+      <created>1730915402488</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1730915402488</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Up port for boostrap-servers">
+      <option name="closed" value="true" />
+      <created>1730921498172</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1730921498172</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fix naming in the processors - ... - ...">
+      <option name="closed" value="true" />
+      <created>1731003181872</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1731003181872</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Up MessageListener - office modul">
+      <option name="closed" value="true" />
+      <created>1731003714381</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1731003714381</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Up MessageListener - plane modul">
+      <option name="closed" value="true" />
+      <created>1731003750560</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1731003750560</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add front side - Vue.js">
+      <option name="closed" value="true" />
+      <created>1731015767947</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1731015767947</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Add AirportStateProcessor - office module -the plug for OFFICE : ROUTE key">
+      <option name="closed" value="true" />
+      <created>1731072830050</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1731072830050</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Add OfficeRouteProcessor - office module -the plug for OFFICE : ROUTE key">
+      <option name="closed" value="true" />
+      <created>1731072862189</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1731072862189</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add AirportStateProcessor - plane module - the plug for AIRPORT : STATE key">
+      <option name="closed" value="true" />
+      <created>1731073943148</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1731073943148</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Up MessageListener - plane module">
+      <option name="closed" value="true" />
+      <created>1731073992510</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1731073992510</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Up application.yaml - office module - change airports">
+      <option name="closed" value="true" />
+      <created>1731087104924</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1731087104924</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Up RouteController - office module">
+      <option name="closed" value="true" />
+      <created>1731087152788</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1731087152788</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Add index.vue - ui module - all logics with planes and messages">
+      <option name="closed" value="true" />
+      <created>1731108903237</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1731108903237</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add PlaneStateProcessor (Kafka config) - office modul" />
+    <MESSAGE value="Up MessageListener (Kafka config) - office modul" />
+    <MESSAGE value="Add application.yaml - plane modul" />
+    <MESSAGE value="Up pom.xml - add common_data modul - plane modul" />
+    <MESSAGE value="Up OfficeWebSocketConfig - office modul" />
+    <MESSAGE value="Add PlaneProvider - plane modul" />
+    <MESSAGE value="Add MessageConfig - plane modul - inject message converter" />
+    <MESSAGE value="Add MessageListener - plane modul" />
+    <MESSAGE value="Add OfficeRouteProcessor - plane modul" />
+    <MESSAGE value="Add OfficeStateProcessor - plane modul" />
+    <MESSAGE value="Add PlaneStateProcessor - plane modul" />
+    <MESSAGE value="Add PlaneScheduler - plane modul" />
+    <MESSAGE value="Up port for boostrap-servers" />
+    <MESSAGE value="Fix naming in the processors - ... - ..." />
+    <MESSAGE value="Up MessageListener - office modul" />
+    <MESSAGE value="Up MessageListener - plane modul" />
+    <MESSAGE value="Add front side - Vue.js" />
+    <MESSAGE value="Add AirportStateProcessor - office module -the plug for AIRPORT : STATE key" />
+    <MESSAGE value="Add OfficeRouteProcessor - office module -the plug for OFFICE : ROUTE key" />
+    <MESSAGE value="Add AirportStateProcessor - office module -the plug for AIRPORT : STATE key" />
+    <MESSAGE value="Add AirportStateProcessor - plane module - the plug for AIRPORT : STATE key" />
+    <MESSAGE value="Up MessageListener - plane module" />
+    <MESSAGE value="Up application.yaml - office module - change airports" />
+    <MESSAGE value="Up RouteController - office module" />
+    <MESSAGE value="Add index.vue - ui module - all logics with planes and messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add index.vue - ui module - all logics with planes and messages" />
   </component>
 </project>
