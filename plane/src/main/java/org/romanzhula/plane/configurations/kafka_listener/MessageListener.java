@@ -26,14 +26,19 @@ public class MessageListener {
     public void locatorListener(String message) {
         String dataFromJson = messageConverter.extractDataFromJson(message);
 
-        if (processorsMap != null) {
+        if (processorsMap != null && processorsMap.containsKey(dataFromJson)) {
             try {
-                processorsMap.get(dataFromJson).processMessageFromJson(message);
+                MessageProcessor<? extends Message> processor = processorsMap.get(dataFromJson);
+                if (processor != null) {
+                    processor.processMessageFromJson(message);
+                } else {
+                    log.error("Processor for key '{}' is null.", dataFromJson);
+                }
             } catch (Exception e) {
-                log.error("Error processing message: {}", e.getLocalizedMessage());
+                log.error("Error processing message: {}", e.getLocalizedMessage(), e);
             }
         } else {
-            log.error("No processor found for data: {}", dataFromJson);
+            log.error("No processor found for key: {}", dataFromJson);
         }
     }
 
