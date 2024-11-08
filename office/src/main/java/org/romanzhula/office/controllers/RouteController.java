@@ -13,13 +13,13 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/routes")
+@RequestMapping("api/routes")
 public class RouteController {
 
     private final DirectionService directionService;
     private final BufferForWaitingRoutesService bufferForWaitingRoutesService;
 
-    @PostMapping("/route")
+    @PostMapping(path = "route")
     public void addRoute(
             @RequestBody List<String> routeLocations
     ) {
