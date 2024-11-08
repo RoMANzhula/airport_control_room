@@ -1,0 +1,30 @@
+1. open GitBash
+2. go to package with Kafka:  cd /c/Kafka/kafka_2.13-3.8.0
+3. run zookeeper: bin/zookeeper-server-start.sh config/zookeeper.properties
+4. again open GitBash
+5. go to package:  cd /c/Kafka/kafka_2.13-3.8.0
+6. run kafka: bin/kafka-server-start.sh config/server.properties
+
+7. run office service in Intellij IDEA
+8. run plane service in Intellij IDEA
+
+9. create UI
+9.1 in terminal IDEA from root package:  npm init nuxt-app ui
+9.2 Ok to proceed? (y): click "y" button
+- ? Project name: ui
+- ? Programming language: JavaScript
+- ? Package manager: Npm
+- ? UI framework: None
+- ? Template engine: HTML
+- ? Nuxt.js modules: Axios
+- ? Linting tools:
+- ? Testing framework: None
+- ? Rendering mode: Single Page App
+- ? Deployment target: Static (Static/Jamstack hosting)
+- ? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+- ? What is your GitHub username? romanzhula
+- ? Version control system: None
+
+10. open npm tab in IDEA (left vertical panel in my case)
+11. click "dev" to run UI(our front)
+
