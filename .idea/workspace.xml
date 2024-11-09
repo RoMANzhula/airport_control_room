@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4589ae59-4900-4f7b-9b08-53f682548592" name="Changes" comment="Add all mess">
+    <list default="true" id="4589ae59-4900-4f7b-9b08-53f682548592" name="Changes" comment="Add helper file">
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/img_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +52,7 @@
     "Spring Boot.PlaneApplication.executor": "Run",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/airport control room/ui/assets",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/airport control room",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -157,15 +159,8 @@
       <workItem from="1730882490171" duration="22765000" />
       <workItem from="1730985697582" duration="31219000" />
       <workItem from="1731060482757" duration="12659000" />
-      <workItem from="1731076896070" duration="31216000" />
-    </task>
-    <task id="LOCAL-00017" summary="Add MessageConverter interface - common_data modul">
-      <option name="closed" value="true" />
-      <created>1730740891616</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1730740891616</updated>
+      <workItem from="1731076896070" duration="33852000" />
+      <workItem from="1731174440803" duration="3121000" />
     </task>
     <task id="LOCAL-00018" summary="Up Airport - common_data modul - change to public methods">
       <option name="closed" value="true" />
@@ -551,7 +546,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731109470920</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Add helper file">
+      <option name="closed" value="true" />
+      <created>1731109850030</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1731109850030</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add PlaneProvider - plane modul" />
     <MESSAGE value="Add MessageConfig - plane modul - inject message converter" />
     <MESSAGE value="Add MessageListener - plane modul" />
     <MESSAGE value="Add OfficeRouteProcessor - plane modul" />
@@ -594,6 +596,7 @@
     <MESSAGE value="Add Airport.vue - ui module" />
     <MESSAGE value="Add images - ui module" />
     <MESSAGE value="Add all mess" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all mess" />
+    <MESSAGE value="Add helper file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add helper file" />
   </component>
 </project>
