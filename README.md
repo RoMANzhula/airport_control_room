@@ -87,6 +87,7 @@ responsible for specific functionality, with Kafka as the messaging system for i
 
 1. Start `Docker Compose`:
     ```bash
+    cd docker
     docker-compose up -d
     ```
 
