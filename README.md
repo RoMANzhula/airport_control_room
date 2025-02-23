@@ -25,7 +25,7 @@ responsible for specific functionality, with Kafka as the messaging system for i
 - **Plane Service**: Handles specific aspects of logistics or resources.
 - **UI (Frontend)**: User interface built with Nuxt.js and Vue.js.
 
-## Technologies Used
+## Technologies Used:
 
 ### 1. Docker and Docker Compose
 - **Docker** allows each component to run in separate containers, simplifying environment setup and management.
